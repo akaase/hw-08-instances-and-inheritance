@@ -1,26 +1,38 @@
 class Player:
 
-    def __init__(???):
-        ???
+    def __init__(self):
+        self.level = 1
+        self.gold_coins = 0
+        self.health = 10
 
-    def __str__(???):
-        ???
+    def __str__(self):
+        return f'You are at level {self.level}, have {self.gold_coins} gold, and {self.health} health points'
 
-    def level_up(???):
-        ???
+    def level_up(self):
+        self.level += 1
 
-    def collect_treasure(???):
-        ???
- 
-    def restart(???):
-        ???
+    def collect_treasure(self):
+        self.gold_coins += 1
+        if self.gold_coins % 10 == 0:
+            self.level_up()
 
-    def do_battle(???):
-        ???
+    def restart(self):
+        # self.level = 1
+        # self.gold_coins = 0
+        # self.health = 10
+        #
+        # --- (STRETCH) without repeating yourself ---
+        #
+        self.__init__()
+
+    def do_battle(self, damage_taken):
+        self.health -= damage_taken
+        if self.health <= 0:
+            self.restart()
 
 def main():
     # Start the game
-    player_1 = ???
+    player_1 = Player()
     print(player_1)
 
     # Testing that the player can collect_treasure 9 times
