@@ -96,7 +96,7 @@ We can model the different types of celestial bodies as follows:
 1. Each `Body`, no matter which kind (star, planet, or moon) has to keep track of two pieces of information -- Its `name` and `mass`
    * The `name` of a `Body` should be a string
    * The `mass` of a `Body` should be an integer
-   * **Hint:** Use `instance variables` to keep track of these!
+   * **Hint:** Use **instance variables** to keep track of these!
    * Your job is to implement the `__init__` method of the `Body` class
 1. Each `Star` (which is a kind of `Body`), has an additional piece of information to keep track of: Its `type`
    * The `type` of a `Star` should be a string
@@ -114,7 +114,7 @@ We can model the different types of celestial bodies as follows:
 1. Finally, each `Moon` is also a kind of `Body`
    * Moons, in addition to having a `name` and `mass`, also has a `month_length` and a `orbit_planet`
    * The `month_length` should be a integer and it represents the number of days in a month (For example: `30` for the Earth's moon - Luna)
-   * The `orbit_planet` should be an instance of the planet that the moon orbits around!
+   * The `orbit_planet` should be an *instance of the planet* that the moon orbits around!
       * For example, Luna orbits the Earth
       * **Hint:** This means the Earth must exist before its moon can be created!
    * Your job is to:
@@ -133,11 +133,11 @@ Next, we can model our Solar System with a top-level class, let's call it `Syste
    * The return value of the `total_mass` method should the sum of all the masses of the bodies inside the system
 * **Note**: A `System` is **not** a `Body`! Instead, it *contains* bodies.
 
-Finally, fill out the `???` parts of the `main` function:
-   * Instantiate a `sun`, an `earth`, a `luna`
+Finally, implement the missing parts of the `main` function:
+   * Instantiate a `sun`, an `earth`, and a `luna`
       * For the `sun`, Use the name `'Sun'`, mass of `200`, and `type` of `'G-Type'`
       * For the `earth`, Use the name `'Earth'`, mass of `150`, `day_length` of `24`, and `year_length` of `365`
-      * For `luna`, Use the name `'Luna'`, mass of `100`, `month_length` of `30`, and `orbit_planet` of `earth`
+      * For `luna`, Use the name `'Luna'`, mass of `100`, `month_length` of `30`, and an `orbit_planet` of ... what do you think?
    * Instantiate a `solar_system`
       * Add the three bodies you've already instantiated to the solar system
 
@@ -154,8 +154,8 @@ Luna
 
 ---
 
-# Food for Thought
+# To Go Where No One Has Gone Before
 
-Isn't it fun to explore unknown new stuff?
+Isn't it fun to explore unknown new stuff, like Object Oriented Programming?
 
 ![](https://media.giphy.com/media/26zyYdiV4pdZZUWEU/source.gif)
