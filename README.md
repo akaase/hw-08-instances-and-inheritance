@@ -1,4 +1,4 @@
-# Assignment: Object-Oriented Programming - Class Variables and Methods
+# Assignment: Object-Oriented Programming - Instances and Inheritance
 
 In this assignment, you'll practice:
 
