@@ -133,11 +133,13 @@ Next, we can model our Solar System with a top-level class, let's call it `Syste
    * The return value of the `total_mass` method should the sum of all the masses of the bodies inside the system
 * **Note**: A `System` is **not** a `Body`! Instead, it *contains* bodies.
 
-Finally, fill out the parts of the `main` function, in order to instantiate a `sun`, an `earth`, a `luna`, and a `solar_system`. 
-
-* For the `sun`, Use the name `'Sun'`, mass of `200`, and `type` of `'G-Type'`
-* For the `earth`, Use the name `'Earth'`, mass of `150`, `day_length` of `24`, and `year_length` of `365`
-* For `luna`, Use the name `'Luna'`, mass of `100`, `month_length` of `30`, and `orbit_planet` of `earth`
+Finally, fill out the `???` parts of the `main` function:
+   * Instantiate a `sun`, an `earth`, a `luna`
+      * For the `sun`, Use the name `'Sun'`, mass of `200`, and `type` of `'G-Type'`
+      * For the `earth`, Use the name `'Earth'`, mass of `150`, `day_length` of `24`, and `year_length` of `365`
+      * For `luna`, Use the name `'Luna'`, mass of `100`, `month_length` of `30`, and `orbit_planet` of `earth`
+   * Instantiate a `solar_system`
+      * Add the three bodies you've already instantiated to the solar system
 
 ### Expected Output
 
