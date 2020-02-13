@@ -19,7 +19,9 @@ You know what you're doing by now! **Fork**/**Clone**/**Commit**/**Push**/**Subm
 
 # Exercise 1: Insert Coin(s)
 
-The objective of this exercise is to write a simple game, where the player can **collect treasure** and **do battle**. Every time the player collects 10 gold coins, they should **level up**. But, if they lose all their health points, the game restarts.
+The objective of this exercise is to write a simple game, where the player can **collect treasure** and **do battle**.
+
+Every time the player collects 10 gold coins, they should **level up**. But, if they lose all their health points, the game restarts.
 
 Each player needs to keep track of the following pieces of data:
 
@@ -31,8 +33,6 @@ Some starter code is already in the file named `exercise1.py`. Your job is to fi
 
 Take a look now at `exercise1.py` and familiarize yourself with the layout of the starter code. Notice the placeholder `???`s -- you need to replace them with real code! 
 
-**Note**: Do **not** add any new functions or methods! Just fill out the `???`s.
-
 Your job: 
 
 1. Implement the `__init__` method
@@ -41,7 +41,7 @@ Your job:
    * Recall that at the beginning of the game, the player should start at a level of 1, health of 10, and 0 gold coins
 1. Implement the `__str__` method
    * What parameter(s) do you need? Replace `???` with the required parameter(s)
-   * Analyze the example output to figure out how you need to format the string representation of the player.
+   * *Analyze the example output* to figure out how you need to format the string representation of the player.
 1. Implement the `level_up` method
    * What parameter(s) do you need? Replace `???` with the required parameter(s)
    * What should this method do? What instance variable(s) does it need to modify?
@@ -58,8 +58,10 @@ Your job:
 1. Implement the `do_battle` method
    * What parameter(s) do you need? Replace `???` with the required parameter(s)
    * What should this method do? What instance variable(s) does it need to modify?
-   * Recall that if the player loses all of their health points, the game should restart!
+   * Recall that if the player loses all of their health points, the game should restart! This function should take care of the game restart, by calling the `restart` method.
 1. Finally, look in the `main` function and fill in the one and only `???` with the correct code, to instantiate a new player.
+
+**Note**: **Do not** add any new functions or methods, and **do not** modify the rest of the `main()` function. Just fill out the `???`s.
 
 ### Expected Output
 
@@ -121,16 +123,16 @@ We can model the different types of celestial bodies as follows:
       * Use Inheritance again to deal with the `name` and `mass` of Moons,
       * Implement the rest of the `__init__` method of the `Moon` class
 
-Next, we can model our Solar System with a top-level class, let's call it `System`, which can contain as many celestial bodies as needed.
+Next, we can model our Solar System with a top-level class, let's call it `System`, which can contain as many celestial bodies as needed. Most of this class has already been written for you except for a few `???`s you need to fill out.
 
-* A `System` should start with no bodies inside of it
-   * What kind of instance variables do you need to take care of multiple bodies?
-   * Implement the `__init__` method of `System` class to reflect this
-* It should have the ability to `add` bodies to itself
-   * Implement the `add` method of `System`, to accept some `body`
-   * This `body` should be added to the System's already existing collection of bodies
+* A `System` starts with no bodies inside of it
+* Fill out the parameter list of the `__init__` method of the `System` class
+* A `System` has the ability to `add` bodies to itself
+   * Fill out the `???`s in the `add` method of `System`, to accept some new `body`
+   * As you can see, the new `body` is added to the System's already existing collection of bodies via `append`.
 * Finally, a `System` can report on the `total_mass` of all the celestial bodies inside the system.
-   * The return value of the `total_mass` method should the sum of all the masses of the bodies inside the system
+   * The return value of the `total_mass` method is the sum of all the masses of the bodies inside the system
+   * The only thing you need to do in the `total_mass` method is to fill out the parameter list
 * **Note**: A `System` is **not** a `Body`! Instead, it *contains* bodies.
 
 Finally, implement the missing parts of the `main` function:
@@ -140,6 +142,8 @@ Finally, implement the missing parts of the `main` function:
       * For `luna`, Use the name `'Luna'`, mass of `100`, `month_length` of `30`, and an `orbit_planet` of ... what do you think?
    * Instantiate a `solar_system`
       * Add the three bodies you've already instantiated to the solar system
+
+**Note**: **Do not** add any new functions or methods, and **do not** modify the rest of the `main()` function. Just fill out the `???`s.
 
 ### Expected Output
 

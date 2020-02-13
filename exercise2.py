@@ -16,13 +16,16 @@ class Moon(???):
 
 class System:
     def __init__(???):
-        ???
+        self.bodies = []
 
     def add(???):
-        ???
+        self.bodies.append(???)
 
     def total_mass(???):
-        ???
+        total = 0
+        for body in self.bodies:
+            total += body.mass
+        return total
 
 def main():
     # Create the solar system and its bodies
