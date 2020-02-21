@@ -78,7 +78,7 @@ You are at level 1, have 0 gold, and 10 health points
 
 ---
 
-# Exercise 2: Solar System
+# (STRETCH) Exercise 2: Solar System
 
 Next, let's explore our Solar System!
 
